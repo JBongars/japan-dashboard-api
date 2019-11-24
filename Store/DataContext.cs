@@ -7,8 +7,8 @@ namespace japan_dashboard_api.Store
   {
     public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
-    public DbSet<Prefecture> Prefectures { get; }
-    public DbSet<PrefecturePopulation> prefecturePopulations { get; }
+    public DbSet<Prefecture> Prefectures { get; set; }
+    public DbSet<PrefecturePopulation> prefecturePopulations { get; set; }
 
   }
 }

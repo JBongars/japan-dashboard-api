@@ -2,17 +2,10 @@ namespace japan_dashboard_api.Models
 {
   public class PrefecturePopulation
   {
-    public PrefecturePopulation(string prefectureIso, string gender, string age, string population)
-    {
-      this.prefectureIso = prefectureIso;
-      this.gender = gender;
-      this.age = age;
-      this.population = population;
-
-    }
-    private string prefectureIso { get; }
-    private string gender { get; }
-    private string age { get; }
-    private string population { get; }
+    public int Id { get; set; }
+    public string prefectureIso { get; set; }
+    public string gender { get; set; }
+    public string age { get; set; }
+    public string population { get; set; }
   }
 }
