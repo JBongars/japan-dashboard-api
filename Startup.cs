@@ -30,7 +30,7 @@ namespace japan_dashboard_api
     public void ConfigureServices(IServiceCollection services)
     {
       services.AddDbContext<DataContext>(x => x.UseSqlite(Configuration.GetConnectionString("Default")));
-      services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+      services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
       services.AddTransient<Seed>();
       services.AddScoped<IPrefectureRepository, PrefectureRepository>();
       services.AddScoped<IPrefecturePopulationRepository, PrefecturePopulationRepository>();
