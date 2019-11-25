@@ -9,6 +9,6 @@ namespace japan_dashboard_api.Store
 
     public DbSet<Prefecture> Prefectures { get; set; }
     public DbSet<PrefecturePopulation> PrefecturePopulations { get; set; }
-
+    public object Prefecture { get; internal set; }
   }
 }

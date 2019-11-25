@@ -58,7 +58,7 @@ namespace japan_dashboard_api.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("prefecturePopulations");
+                    b.ToTable("PrefecturePopulations");
                 });
 #pragma warning restore 612, 618
         }
