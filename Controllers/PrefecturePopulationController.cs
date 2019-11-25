@@ -36,11 +36,5 @@ namespace japan_dashboard_api.Controllers
       return Ok(data);
     }
 
-    [HttpGet("test")]
-    public ActionResult<string> test()
-    {
-      return Ok("hello");
-    }
-
   }
 }
