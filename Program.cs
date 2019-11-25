@@ -39,6 +39,8 @@ namespace japan_dashboard_api
           logger.LogError(ex, "An error has occured during migration!");
         }
       }
+
+      host.Run();
     }
 
     public static IHostBuilder CreateHostBuilder(string[] args) =>
