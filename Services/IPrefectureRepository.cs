@@ -6,7 +6,7 @@ namespace japan_dashboard_api.Services
 {
   public interface IPrefectureRepository
   {
-    Task<IEnumerable<Prefecture>> GetPrefectures();
-
+    Task<List<Prefecture>> GetPrefectures();
+    Task<List<PrefectureResult>> GetPrefecturesWithPopulation();
   }
 }

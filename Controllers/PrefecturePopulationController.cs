@@ -23,9 +23,9 @@ namespace japan_dashboard_api.Controllers
     }
 
     [HttpGet("")]
-    public ActionResult<IEnumerable<Prefecture>> getPrefectures()
+    public ActionResult<IEnumerable<PrefectureResult>> getPrefectures()
     {
-      var data = _prefectureRepository.GetPrefectures();
+      var data = _prefectureRepository.GetPrefecturesWithPopulation();
       return Ok(data);
     }
 

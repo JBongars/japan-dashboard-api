@@ -1,5 +1,3 @@
-using System;
-
 namespace japan_dashboard_api.Models
 {
     public class PrefecturePopulationAll
@@ -16,8 +14,6 @@ namespace japan_dashboard_api.Models
         }
 
         public PrefecturePopulationAll addToPopulation(long value){
-            Console.WriteLine("current value");
-            Console.WriteLine(this.population);
             long newValue = long.Parse(this.population) + value;
             return new PrefecturePopulationAll(this.gender, this.age, newValue.ToString());
         }

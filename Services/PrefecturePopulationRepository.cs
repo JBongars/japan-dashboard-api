@@ -41,9 +41,12 @@ namespace japan_dashboard_api.Services
       return result;
     }
 
-    public async Task<List<PrefecturePopulation>> GetPopulationForPrefecture(string prefecture)
+    public async Task<List<PrefecturePopulation>> GetPopulationForPrefecture(string prefectureIsoCode)
     {
-      var data = await _context.PrefecturePopulations.Where(elem => elem.prefectureIso == prefecture).ToListAsync();
+      var data = await _context.PrefecturePopulations.Where(
+        elem => elem.prefectureIso == prefectureIsoCode
+      ).ToListAsync();
+      
       return data;
     }
 
