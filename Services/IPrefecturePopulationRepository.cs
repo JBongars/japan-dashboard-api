@@ -7,5 +7,6 @@ namespace japan_dashboard_api.Services
   public interface IPrefecturePopulationRepository
   {
     Task<List<PrefecturePopulation>> GetPopulationForPrefecture(string prefecture);
+    Task<List<PrefecturePopulationAll>> GetPopulationForAll();
   }
 }

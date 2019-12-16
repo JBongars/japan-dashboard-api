@@ -29,6 +29,13 @@ namespace japan_dashboard_api.Controllers
       return Ok(data);
     }
 
+    [HttpGet("all")]
+    public ActionResult<IEnumerable<PrefecturePopulationAll>> getPopulationForAll()
+    {
+      var data = _prefecturePopulationRepository.GetPopulationForAll();
+      return Ok(data);
+    }
+
     [HttpGet("{isoCode}")]
     public ActionResult<IEnumerable<PrefecturePopulation>> getPopulationByPrefecture(string isoCode)
     {
